@@ -1,9 +1,11 @@
+# https://adventofcode.com/2020/day/1
 require 'byebug'
 
 def read_file
   file = File.open("input.txt")
   file.readlines.map(&:chomp)
 end
+
 
 def find_numbers_that_sums_to_2020
   numbers = read_file
