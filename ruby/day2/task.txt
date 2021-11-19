@@ -1,0 +1,9 @@
+1) Read from file
+2) Take string "1-3 c: abcd"
+3) convert this to struct
+occurences: [1, 3]
+letter: "c"
+password: "abcd"
+4) count matches of a "letter" in "password"
+5) check if occurences are in matches
+6) Count the numbers of status = true
