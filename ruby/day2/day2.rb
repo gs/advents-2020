@@ -28,7 +28,7 @@ def is_password_valid_part_1
 end
 
 # part 2
-def get_letter_precise_postions(letter="c", password="abccd")
+def get_letter_precise_postions(letter, password)
   positions = []
   password = password.split("")
   password.each_with_index do |s, i|
