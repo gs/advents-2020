@@ -2,6 +2,7 @@
   (:require
    [clojure.string :refer [split split-lines]]))
 
+
 (defn read-file []
   (split-lines (slurp "resources/day2-input.txt")))
 ;; => #'day2/read-file
@@ -45,8 +46,9 @@
 (defn main []
   (for [input (read-file)]
     (let [line (split-string input)]
-        (let [result (count_letters_in_password (second line) (last line))]
-            (letters_in_occuences result (first line))))))
+      (let [result (count_letters_in_password (second line) (last line))]
+        (letters_in_occuences result (first line))))))
 
-(frequencies (main))
-;; => {true 628, nil 372}
+(time(frequencies (main)))
+
+

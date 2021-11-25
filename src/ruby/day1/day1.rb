@@ -1,3 +1,4 @@
+# https://www.youtube.com/watch?v=9ITiZ88sljA&list=PLhYmIiHOMWoGIMCmCRwMSrWkHJg12vevR
 # https://adventofcode.com/2020/day/1
 require 'byebug'
 

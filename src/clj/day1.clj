@@ -9,7 +9,10 @@
   (for [x numbers
         y numbers
         :when (= (+ (Integer/parseInt x) (Integer/parseInt y)) 2020)]
-      (flatten [(Integer/parseInt x) (Integer/parseInt y)])))
+    (flatten [(Integer/parseInt x) (Integer/parseInt y)])))
+
+
+
 
 (defn find-matching-numbers-2 []
   (def numbers (clojure.string/split-lines (read-file)))
@@ -19,7 +22,7 @@
         :when (= (+ (Integer/parseInt x)
                     (Integer/parseInt y)
                     (Integer/parseInt z)) 2020)]
-      (flatten [(Integer/parseInt x) (Integer/parseInt y) (Integer/parseInt z)])))
+    (flatten [(Integer/parseInt x) (Integer/parseInt y) (Integer/parseInt z)])))
 
 
 (defn calculate-1 []
